@@ -24,6 +24,7 @@
         <module>jtds</module>
         <module>dbcp</module>
         <module>dbcp2</module>
+        <module>druid</module>
         <module>hikaricp</module>
         <module>oracle-jdbc</module>
         <module>jdk-http</module>
@@ -40,6 +41,7 @@
         <module>ibatis</module>
         <module>mybatis</module>
         <module>okhttp</module>
+        <!--<module>okhttp3</module>-->
         <module>log4j</module>
         <module>logback</module>
         <module>dubbo</module>
@@ -111,6 +113,11 @@
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
             <artifactId>pinpoint-commons-dbcp2-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-druid-plugin</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -198,6 +205,13 @@
             <artifactId>pinpoint-okhttp-plugin</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-okhttp3-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        -->
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
             <artifactId>pinpoint-log4j-plugin</artifactId>
